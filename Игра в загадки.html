@@ -1,0 +1,59 @@
+<script>
+alert ("Игра в загадки");
+
+ var ansver1 =prompt ("Какой язык программирования расматривался на уроке?");
+ var stat=0;
+  if (ansver1=="JavaScript " || ansver1=="javascript")
+  {
+    alert ("Верно");
+    stat++;
+  }
+  else {
+    alert ("Неверно");
+  }
+
+  var ansver2 =prompt ("Что такое Var?");
+
+   if (ansver2=="переменная")
+   {
+     alert ("Верно");
+     stat++;
+   }
+   else {
+     alert ("Неверно");
+   }
+
+   var ansver3 =prompt ("Какой командой строится ветвеление ДА/НЕТ?");
+
+    if (ansver3=="If " || ansver3=="if")
+    {
+      alert ("Верно");
+      stat++;
+    }
+    else {
+
+      alert ("Неверно");
+          }
+var ansver4 =prompt ("Какая команда выводит сторку ввода?");
+
+       if (ansver4=="Prompt " || ansver4=="prompt")
+       {
+         alert ("Верно");
+         stat++;
+       }
+       else {
+         alert ("Неверно");
+        }
+
+var ansver5 =prompt ("JavaScript и Java один и тот же язык ппрограмирования?");
+
+  if (ansver5=="НЕТ " || ansver5=="нет" || ansver5=="No" || ansver5=="no" || ansver5=="NO")
+    {
+       alert ("Верно");
+           stat++;
+         }
+         else {
+           alert ("Неверно");
+          }
+alert ("Из 5 вопросов верных ответов " + stat);
+</script>

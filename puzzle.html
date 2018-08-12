@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cайт студента GeekBrains</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var correctAnswersCount;
+        function askQuestion(textBoxId, answer) {
+            var userAnswer = document.getElementById(textBoxId).value;
+            if (userAnswer == answer) {
+                correctAnswersCount++;
+            }
+        }
+
+        function playPuzzle() {
+            correctAnswersCount = 0;
+            askQuestion("userAnswer1", "oсновы программирования");
+            askQuestion("userAnswer2", "javascript");
+            alert("Количество правильных ответов: " + correctAnswersCount);
+        }
+    </script>
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <a href="index.html">Главная</a> <span>/</span>
+            <a href="puzzle.html">Загадки</a> <span>/</span>
+            <a href="угадайка.html">Угадайка</a>
+        </div>
+        <h1>Личный сайт студента GeekBrains</h1>
+        <div id="center">
+            <h1>Игра в загадки</h1>
+            <div id="box">
+                <p>Название курса.</p>
+                <input type="text" id="userAnswer1">
+                <p>Язык програмирования выполняюший скрипты.</p>
+                <input type="text" id="userAnswer2">
+                <br/><br/>
+                <a href="#" onclick="playPuzzle();">Ответить</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"> <a href="https://geekbrains.ru/" target="_blank">GeekBrains</a></div>
+</body>
+</html>
